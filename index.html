@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic settings -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Name the title of the webpage -->
     <title>Daily To Do</title>
 
+    <!-- Link the stylesheet of css file  -->
     <link rel="stylesheet" href="main.css" />
 </head>
 <body>
     
+    <!-- The header section contains the title and form for adding tasks -->
     <header>
         <h1>Daily To Do</h1>
+        
+        <!-- The form for adding new tasks -->
         <form id="add-task-form">
+            <!-- The input field for entering a new task -->
             <input 
                 type="text" 
                 name="task-input" 
                 id="task-input" 
                 placeholder="What is your plan for today?" />
+            
+            <!-- The submit button for adding the task -->
             <input 
                 type="submit"
                 id="submit-task" 
                 value="Add today tasks" />
         </form>
     </header>
+    
+    <!-- The main section contains the list of tasks -->
     <main>
+        <!-- Displaying the tasks -->
         <section class="task-list">
             <h2>Tasks</h2>
 
+            <!-- The container for the tasks -->
             <div id="tasks">
-
-                <!-- <div class="task">
-                    <div class="content">
-                        <input 
-                            type="text" 
-                            class="text" 
-                            value="A new task"
-                            readonly>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-                    </div>
-                </div> -->
-
             </div>
         </section>
     </main>
 
+    <!-- Link the JavaScript file -->
     <script src="main.js"></script>
 </body>
 </html>
